@@ -30,6 +30,15 @@ export default function VariableWidthGrid() {
  
         </Grid>
       
+      
+        <Grid item xs={12}>          
+    
+          <Item> <a href='https://anupriyaverma13.wixsite.com/graphic-designs' target="_blank"><h1 style={{color:"black"}}>
+          Graphic Designs Portfolio
+   </h1></a>
+   </Item>
+ 
+        </Grid>
         
         <Grid item xs={12}><a href='https://linktr.ee/anupriyaverma' target="_blank">
           <Item> <h1 style={{color:"black"}}>
