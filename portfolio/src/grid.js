@@ -74,7 +74,7 @@ export default function VariableWidthGrid() {
         </Grid>
         <Grid item xs={12}>
           <Item>  <Button variant="text" onClick={handleClickOpen}>
-          <h1 style={{color:"black", textDecoration:"underline"}}> My Services</h1>
+          <h1 style={{color:"black", textDecoration:"underline", textTransform: 'none'}}> My Services</h1>
      </Button></Item>
         </Grid>
       </Grid>
@@ -99,7 +99,7 @@ export default function VariableWidthGrid() {
            <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
              My Services
            </Typography>
-           <Button autoFocus color="inherit" onClick={handleClose}>
+           <Button autoFocus color="inherit" onClick={handleClose} >
              close
            </Button>
          </Toolbar>
