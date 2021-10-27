@@ -126,13 +126,13 @@ export default function VariableWidthGrid() {
          
        </List>
       
-       <img src={ii} alt="Logo" style={{height: "40%", width: "20%"}} />
+      
       
      </Dialog>
      </div>
   );
 }
-/*
+/* <img src={ii} alt="Logo" style={{height: "40%", width: "20%"}} />
 
         <Grid item xs={12}>          
     
