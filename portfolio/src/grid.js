@@ -4,6 +4,25 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {Link} from 'react-router-dom';
+import Button from '@mui/material/Button';
+import Dialog from '@mui/material/Dialog';
+import ListItemText from '@mui/material/ListItemText';
+import ListItem from '@mui/material/ListItem';
+import List from '@mui/material/List';
+import Divider from '@mui/material/Divider';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import CloseIcon from '@mui/icons-material/Close';
+import Slide from '@mui/material/Slide';
+import ii from './images/ii.jpg';
+
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
+
+  
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -17,7 +36,17 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function VariableWidthGrid() {
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
+    <div>
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={3}>
    
@@ -37,19 +66,70 @@ export default function VariableWidthGrid() {
           Social Links
    </h1></Item></a>
         </Grid>
-        <Grid item xs={12}>
-          <Item> <h1 style={{color:"black"}}>
-          My Services
-   </h1></Item>
-        </Grid>
+      
         <Grid item xs={12}>
           <Item><a href='https://calendly.com/anupriyaverma13/one-to-one-session' target="_blank"> <h1 style={{color:"black"}}>
      Book a session with me!
    </h1></a></Item>
         </Grid>
-       
+        <Grid item xs={12}>
+          <Item>  <Button variant="text" onClick={handleClickOpen}>
+          <h1 style={{color:"black", textDecoration:"underline"}}> My Services</h1>
+     </Button></Item>
+        </Grid>
       </Grid>
     </Box>
+      
+     <Dialog
+       fullScreen
+       open={open}
+       onClose={handleClose}
+       TransitionComponent={Transition}
+     >
+       <AppBar sx={{ position: 'relative' }} >
+         <Toolbar>
+           <IconButton
+             edge="start"
+             color="inherit"
+             onClick={handleClose}
+             aria-label="close"
+           >
+             <CloseIcon />
+           </IconButton>
+           <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
+             My Services
+           </Typography>
+           <Button autoFocus color="inherit" onClick={handleClose}>
+             close
+           </Button>
+         </Toolbar>
+       </AppBar>
+       <List>
+       
+         <ListItem button >
+         <a href="mailto:anupriyaverma13@gmail.com" style={{textDecoration:'none', color:'black', fontWeight:'bold'}}>
+           <ListItemText primary="Weekly mentorship on DSA, programming, etc." secondary="Contact me to know more: anupriyaverma13@gmail.com" style={{textDecoration:'none'}} />
+           </a> 
+         </ListItem>
+       
+         <Divider />
+     
+         <ListItem button>
+         <a href="mailto:anupriyaverma13@gmail.com" style={{textDecoration:'none', color:'black'}}>
+
+           <ListItemText
+             primary="Logos, Favicons, Brochures, Posters, Graphics or Web designing for your business or personal use."
+             secondary="Contact me to know more: anupriyaverma13@gmail.com"
+           />
+            </a> 
+         </ListItem>
+         
+       </List>
+      
+       <img src={ii} alt="Logo" style={{height: "40%", width: "20%"}} />
+      
+     </Dialog>
+     </div>
   );
 }
 /*
