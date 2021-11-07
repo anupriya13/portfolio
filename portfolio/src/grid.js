@@ -66,13 +66,7 @@ export default function VariableWidthGrid() {
           Social Links
    </h1></Item></a>
         </Grid>
-      /*
-        <Grid item xs={12}>
-          <Item><a href='https://calendly.com/anupriyaverma13/one-to-one-session' target="_blank"> <h1 style={{color:"black"}}>
-     Book a session with me!
-   </h1></a></Item>
-        </Grid>
-        */
+    
         <Grid item xs={12}>
           <Item>  <Button variant="text" onClick={handleClickOpen}>
           <h1 style={{color:"black", textDecoration:"underline", textTransform: 'none'}}> My Services</h1>
@@ -142,5 +136,12 @@ export default function VariableWidthGrid() {
    </h1></a>
    </Item>
  
+        </Grid>
+        */
+  /*
+        <Grid item xs={12}>
+          <Item><a href='https://calendly.com/anupriyaverma13/one-to-one-session' target="_blank"> <h1 style={{color:"black"}}>
+     Book a session with me!
+   </h1></a></Item>
         </Grid>
         */
