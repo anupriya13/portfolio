@@ -103,7 +103,14 @@ export default function VariableWidthGrid() {
        
          <ListItem button >
          <a href="mailto:anupriyaverma13@gmail.com" style={{textDecoration:'none', color:'black', fontWeight:'bold'}}>
-           <ListItemText primary="Weekly mentorship on DSA, programming, etc." secondary="Contact me to know more: anupriyaverma13@gmail.com" style={{textDecoration:'none'}} />
+           <ListItemText primary="Mentorship on DSA, programming, etc." secondary="Contact me to know more: anupriyaverma13@gmail.com" style={{textDecoration:'none'}} />
+           </a> 
+         </ListItem>
+       
+         <Divider />
+              <ListItem button >
+         <a href="mailto:anupriyaverma13@gmail.com" style={{textDecoration:'none', color:'black', fontWeight:'bold'}}>
+           <ListItemText primary="Resume Review" secondary="Contact me to know more: anupriyaverma13@gmail.com" style={{textDecoration:'none'}} />
            </a> 
          </ListItem>
        
@@ -116,8 +123,16 @@ export default function VariableWidthGrid() {
              primary="Logos, Favicons, Brochures, Posters, Graphics or Web designing for your business or personal use."
              secondary="Contact me to know more: anupriyaverma13@gmail.com"
            />
-            </a> 
+            
+             <Divider />
+             
+     
+       <ListItem button >
+         <a href="mailto:anupriyaverma13@gmail.com" style={{textDecoration:'none', color:'black', fontWeight:'bold'}}>
+           <ListItemText primary="Buy me a coffee! :P" secondary="UPI: anupriyaverma13@oksbi" style={{textDecoration:'none'}} />
+           </a> 
          </ListItem>
+            </a> 
          
        </List>
       
