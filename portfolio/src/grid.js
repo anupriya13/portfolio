@@ -123,7 +123,8 @@ export default function VariableWidthGrid() {
              primary="Logos, Favicons, Brochures, Posters, Graphics or Web designing for your business or personal use."
              secondary="Contact me to know more: anupriyaverma13@gmail.com"
            />
-            
+           </a>
+            </ListItem>
              <Divider />
              
      
@@ -132,7 +133,7 @@ export default function VariableWidthGrid() {
            <ListItemText primary="Buy me a coffee! :P" secondary="UPI: anupriyaverma13@oksbi" style={{textDecoration:'none'}} />
            </a> 
          </ListItem>
-            </a> 
+          
          
        </List>
       
@@ -142,21 +143,3 @@ export default function VariableWidthGrid() {
      </div>
   );
 }
-/* <img src={ii} alt="Logo" style={{height: "40%", width: "20%"}} />
-
-        <Grid item xs={12}>          
-    
-          <Item> <a href='https://anupriyaverma13.wixsite.com/graphic-designs' target="_blank"><h1 style={{color:"black"}}>
-          Graphic Designs Portfolio
-   </h1></a>
-   </Item>
- 
-        </Grid>
-        */
-  /*
-        <Grid item xs={12}>
-          <Item><a href='https://calendly.com/anupriyaverma13/one-to-one-session' target="_blank"> <h1 style={{color:"black"}}>
-     Book a session with me!
-   </h1></a></Item>
-        </Grid>
-        */
